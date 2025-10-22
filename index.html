@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Giulietta Imondi — Ceramista</title>
+  <meta name="description" content="Sito personale di Giulietta Imondi — ceramica, workshop e contatti" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Giulietta Imondi</h1>
+      <p class="tag">Ceramista — Organico · Materico · Minimal</p>
+      <nav class="main-nav">
+        <a href="#about">Chi sono</a>
+        <a href="#gallery">Opere</a>
+        <a href="#courses">Corsi</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-image"><img src="assets/placeholder1.jpg" alt="Opera principale"></div>
+        <div class="hero-text">
+          <h2>La materia è memoria</h2>
+          <p>Plasmare l'argilla è un gesto che custodisce tempo, ricordo e forma. Ogni pezzo è unico — nato dal dialogo tra mano e materia.</p>
+          <a class="btn" href="#gallery">Scopri le opere</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>Chi sono</h3>
+      <p>Mi chiamo <strong>Giulietta Imondi</strong>. Sono ceramista e lavoro con argille locali, smalti naturali e processi a bassa emissione. La mia pratica esplora il rapporto tra uomo e oggetto: come la materia trattiene memoria e come l'opera diventa testimonianza.</p>
+      <div class="about-grid">
+        <img src="assets/atelier.jpg" alt="Atelier">
+        <div>
+          <p>Nel mio atelier sperimento tecniche di tornio, modellazione a mano libera e sperimentazioni di smalti. I miei pezzi nascono come micro-Wunderkammern: piccole raccolte di memoria, dove superficie e traccia raccontano storie.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section container">
+      <h3>Galleria — Opere</h3>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-media"><img src="assets/placeholder1.jpg" alt="Vaso Crema"></div>
+          <div class="card-body">
+            <h4>Vaso Crema</h4>
+            <p class="meta">Anno: 2024 · Materiali: Gres, smalto opaco · Dimensioni: 20 × 30 cm</p>
+            <p class="note">Pezzo unico, smalto al fosfato. Esposizione personale 2025.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-media"><img src="assets/placeholder2.jpg" alt="Ciotola Sabbia"></div>
+          <div class="card-body">
+            <h4>Ciotola Sabbia</h4>
+            <p class="meta">Anno: 2023 · Materiali: Terracotta, engobbi naturali · Dimensioni: 15 × 15 cm</p>
+            <p class="note">Serie da tavola in edizione limitata. Lavabile in acqua fredda.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-media"><img src="assets/placeholder3.jpg" alt="Scultura Organica"></div>
+          <div class="card-body">
+            <h4>Scultura Organica</h4>
+            <p class="meta">Anno: 2025 · Materiali: Ceramica refrattaria, ossidi · Dimensioni: 30 × 10 × 12 cm</p>
+            <p class="note">Pezzo da collezione — texture ottenuta con impasti naturali.</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-media"><img src="assets/placeholder4.jpg" alt="Piatti Ritorno"></div>
+          <div class="card-body">
+            <h4>Piatti 'Ritorno'</h4>
+            <p class="meta">Anno: 2022 · Materiali: Gres, smalti a base di cenere · Dimensioni: Ø 24 cm</p>
+            <p class="note">Set da tavola in edizione numerata.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="courses" class="section container">
+      <h3>Corsi & Workshop</h3>
+      <p class="lead">Offro corsi per tutti i livelli: dal corso base al workshop esperienziale. Trova l'esperienza che fa per te.</p>
+      <div class="grid">
+        <!-- Course 1 -->
+        <article class="card course">
+          <img src="assets/course1.jpg" alt="Corso base" class="course-img">
+          <div class="card-body">
+            <h4>Corso Base di Ceramica</h4>
+            <p class="meta">Durata: 8 incontri · Costo: 350€ · Livello: Base</p>
+            <p>Introduzione alla modellazione, tornio e smaltatura. Materiali inclusi.</p>
+            <button class="btn-outline" onclick="openSignup('Corso Base di Ceramica')">Iscriviti / Richiedi info</button>
+          </div>
+        </article>
+
+        <!-- Course 2 -->
+        <article class="card course">
+          <img src="assets/course1.jpg" alt="Workshop esperienziale" class="course-img">
+          <div class="card-body">
+            <h4>Workshop 'Argilla e Natura'</h4>
+            <p class="meta">Durata: Weekend intensivo · Costo: 220€ · Livello: Tutti</p>
+            <p>Esperienza immersiva con argille naturali e pigmenti locali. Ideale per chi cerca contatto diretto con la materia.</p>
+            <button class="btn-outline" onclick="openSignup('Workshop Argilla e Natura')">Iscriviti / Richiedi info</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Signup modal (simple) -->
+      <div id="signupModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" onclick="closeSignup()">×</button>
+          <h4 id="modalTitle">Iscrizione</h4>
+          <form id="signupForm">
+            <label>Nome<input type="text" name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Messaggio<textarea name="message"></textarea></label>
+            <input type="hidden" name="course" id="courseField">
+            <button type="submit" class="btn">Invia richiesta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section container">
+      <h3>Curriculum Vitae</h3>
+      <p>Scarica il CV o visualizzalo online. Sostituisci il file in /cv/ con il tuo PDF.</p>
+      <div class="cv-actions">
+        <a class="btn" href="cv/Giulietta_Imondi_CV.pdf" download>Scarica il CV (PDF)</a>
+        <a class="btn-outline" href="#" onclick="window.open('https://drive.google.com','_blank')">Visualizza online</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contatti</h3>
+      <p>Per commissioni e richieste private contattami direttamente. I messaggi possono essere inviati tramite il modulo sottostante.</p>
+
+      <!-- Contact form: uses Formspree placeholder; instructions in README to replace FORM_ENDPOINT -->
+      <form id="contactForm" action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST" class="contact-form">
+        <label>Nome<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="_replyto" required></label>
+        <label>Oggetto<input type="text" name="subject"></label>
+        <label>Messaggio<textarea name="message" rows="6" required></textarea></label>
+        <!-- Optional: mailto fallback button -->
+        <div class="form-actions">
+          <button type="submit" class="btn">Invia</button>
+          <a class="btn-outline" href="mailto:giulietta@example.com?subject=Richiesta%20from%20website">Invia via email</a>
+        </div>
+      </form>
+
+      <div class="contact-links">
+        <p>Email: <a href="mailto:giulietta@example.com">giulietta@example.com</a></p>
+        <p>Telefono: <a href="tel:+391234567890">+39 123 456 7890</a></p>
+        <p>Instagram: <a href="https://instagram.com/giulietta_imondi" target="_blank">@giulietta_imondi</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Giulietta Imondi. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
